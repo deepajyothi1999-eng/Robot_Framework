@@ -67,6 +67,10 @@ Run Keywords
 ...    Log    Step2
 Return From Keyword If    ${flag} == True
 
+JOSN
+====
+${json}=    Set Variable    ${response.json()}
+
 FOR    ${i}    IN RANGE    5
     Log To Console    ${i}
 END
