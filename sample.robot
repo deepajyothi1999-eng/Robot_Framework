@@ -59,7 +59,6 @@ ${name}=    Set Variable    Deepa
 Log    ${name}
 Set Global Variable    ${ENV}    QA
 Set Test Variable    ${browser}    Chrome
-Set Test Variable    ${browser}    Chrome
 
 Run Keyword If    ${status} == 200    Log    Success
 Run Keywords
