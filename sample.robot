@@ -189,3 +189,9 @@ Alert Should Be Present
 //button[contains(text(),'Login')]
 //input[starts-with(@id,'user')]
 
+Using command line variables
+
+python -m robot -v browser:chrome test.robot
+*** Test Cases ***
+Open Application
+    Log To Console    ${browser}
