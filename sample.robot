@@ -195,3 +195,10 @@ python -m robot -v browser:chrome test.robot
 *** Test Cases ***
 Open Application
     Log To Console    ${browser}
+
+Multiple variables
+python -m robot ^
+-v browser:chrome ^
+-v env:QA ^
+-v url:https://google.com ^
+test.robot
